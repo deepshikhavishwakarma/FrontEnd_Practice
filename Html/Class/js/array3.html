@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Demo on methods of Array</h3>
+    <script>
+        const eles = [10, 20, 30, 40, 50, 60, 70, 80, 90, 40, 50];
+        let str = "My name is Deepshikha Vishwakarma";
+        document.write(str, `<br>`);
+        document.write(eles, `<br>`);
+        // includes()
+        document.write(`40 found ? ${eles.includes(40)}<br>`);//true
+        document.write(`99 found ? ${eles.includes(99)}<br>`);//false
+        document.write(`${str.includes("Vish")}<br>`);//true
+        document.write(`${str.includes("t")}<br>`);//false
+
+        document.write(`${[12, 34, 78].includes(34)}<br>`); //true                          //Anonymous
+        document.write(`${"green apples".includes("cpp")}<br>`);//false
+
+        // indexof()
+        //  oth =>last
+        document.write(`30@   ${eles.indexOf(30)}<br>`); //30@ 2
+        document.write(`66@   ${eles.indexOf(66)}<br>`); //66@ -1
+        document.write(`30@   ${eles.indexOf(30,6)}<br>`); //30@ -1
+        document.write(`${str.indexOf("a")}<br>`); //4
+
+        // lastIndexOf()
+        document.write(`30@   ${eles.lastIndexOf(30)}<br>`); //30@ 2
+        document.write(`${str.lastIndexOf("y")}<br>`); //1
+
+        // reverse()
+        eles.reverse();
+        document.write(`reverse eles is  "${eles}<br>`);
+        // str.reverse();
+        // document.write(str, `<br>`);  
+        
+        
+        // sort()
+        eles.sort();
+        document.write(`Sorted eles is  "${eles}<br>`);
+
+
+        const names=['rama','shyama','dhenu','radha','kanihiya','gopal'];
+        document.write(`names is  "${names}<br>`);
+        names.sort();
+        document.write(`Sorted names is  "${names}<br>`);
+
+        // join()
+
+        document.write(`Joins  "${eles.join("@")}<br>`);
+        document.write(`Joins  "${eles.join("*")}<br>`);
+        document.write(`Joins  "${eles.join("_")}<br>`);
+        document.write(`Joins  "${eles.join("&#128556;")}<br>`);
+
+
+
+    </script>
+</body>
+
+</html>

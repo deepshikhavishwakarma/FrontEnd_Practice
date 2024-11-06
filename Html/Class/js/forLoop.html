@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Demo on For loop</h3>
+
+    <script>
+        //  for(initialize var; condition ; stepping); 
+        //    if we not use block then semi colon is compulsory
+
+
+
+        for (let i = 1; i <= 10; i++) { //no of iteration depends on stepping value
+            document.writeln(i);
+        }
+        document.writeln(`<br>`);
+        for (let i = 10; i >= 1; --i) { //no of iteration depends on stepping value
+            document.writeln(i);
+        }
+        document.writeln(`<br>`);
+        for (let i = 1, j = 1, k = 1; i <= 9; i++, ++j, k += 1) {
+            document.writeln(i + ' ' + j + ' ' + k + ' <br>');
+        }
+    </script>
+</body>
+
+</html>

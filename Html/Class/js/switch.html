@@ -1,0 +1,53 @@
+<h3>Demo of Simple if</h3>
+<script>
+let n=+prompt("Enter any number: ");
+if(n<0){
+    n=n*-1
+}
+document.write("n val "+n, "<br/>");
+
+//checking the given number is even or odd
+if(n%2===0){
+    document.write(n+" Even number",'<br />') 
+}else{
+    document.write(n+" Odd number",'<br />')
+}
+
+
+//if else if is used for checking multiple level we can check condition in multiple if but for short the code we use ladder if condition
+
+let x=+prompt(" Enter first number: ");
+let y=+prompt("Enter Second number: ");
+
+if(x>y)
+document.write(x+" is big",'<br />');
+else if(y>x)
+   document.write(y+ " is big",'<br />');
+else
+   document.write("no one s big",'<br />');
+
+let num=+prompt(" Enter number for getting day: ");
+
+
+
+switch(num){
+case 1: document.write('Monday');
+        break;
+case 2: document.write('Tuesday');
+        break;
+case 3: document.write('wednesday');
+        break;
+case 4: document.write('Thursday');
+        break;
+case 5: document.write('Friday');
+        break;
+case 6: document.write('Saturday');
+        break;
+case 7: document.write('Sunday');
+        break;
+default: document.write('Enter valid number');
+}
+</script>
+
+<!-- if block =>true block
+else ==>false block -->

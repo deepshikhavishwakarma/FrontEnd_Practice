@@ -1,0 +1,39 @@
+<script>
+               //store 5 data type 1st to 4th is primitive data type and 5th is non primitive dt (reference of dt)
+    let data  = ['ram',50,6.2,true,new Date()];//storing different type of array
+    document.write(`Date : ${data}<br`);
+
+    //constant array
+    const  a=[10,20,30]; //a is reference var where a is constant not array is constant
+    document.write(`A  :${a}<br>`);
+    a[1] = 202;  //updating
+    a[3] = 404;
+    document.write(`A  :${a}<br>`);
+  //a=[12,13,14];  error
+
+
+  //dynamic array
+
+  const b=[11,22,33,44,55,66,77,88,99];
+  document.write(`B    :${b}<br>`);
+  document.write(`${b.length}<br>`);
+  b.length = 5;
+
+  document.write(`B    :${b}<br>`);
+  document.write(`${b.length}<br>`);
+  b.length = 7;
+  b[5]=101;
+  b[6]=202;
+  document.write(`B    :${b}<br>`);
+  document.write(`${b.length}<br>`);
+
+
+  //dynamic values
+
+  const c=[];
+  let n=+prompt("Enter no of elements");
+  for(let i=0;i<10;i++){
+    c[i] = prompt("enter array value");
+  }
+  document.write(`C :${c}<br>`);
+</script>

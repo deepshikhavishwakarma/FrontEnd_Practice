@@ -1,0 +1,56 @@
+<script>
+    //let a=10,b="ram",c=true;//valid
+    let x=15,y=2;
+    //Arithmatic operation + - * / % **
+    document.write(x+y,`<br>`);
+    document.write(y*3,`<br>`);
+    document.write(y**3,`<br>`);
+    //Relational operation > < >= <= == != !== ===
+    document.write(x>=y,`<br>`);
+    document.write(y<3,`<br>`);
+    document.write(y**3,`<br>`);
+    let z=8;
+    document.write(y==z,`<br>`);//verifies one type
+    document.write(y===z,`<br>`);//two types
+    document.write(y!=z,`<br>`);
+    document.write(y!==z,`<br>`);
+    // Logical operator (Multiple Comparisonat a time) && || !
+    document.write(y>=0 && x<=100,`<br>`);
+    document.write(!(y>3),`<br>`);
+    // Assignment operator
+    //Short hand +=  -= /= %= *=
+    x+=10;
+    y*=20;
+    document.write(`X   :`,x,`<br>`,`Y   :`,y,`<br>`);
+    // Concat operator
+    document.write("Brown"+"purple"+`<br>`);
+    document.write(100+" Mangoes" ,` <br>`);
+    // Increment operator ++ and Decrement operator --                
+    // ++Var(pre early operator)
+    // var++(post late operator)
+    x++;
+    ++y;
+    document.write(`X   :`,x,`<br>`,`Y   :`,y,`<br>`);
+    // ternary operator  ? :  (to perform decision making operations)
+    // 
+    document.write(x%2===0 ?"Even number":"Odd number",`<br>`);
+    document.write(10-200/45+10*5,`<br>`);
+    document.write(10+20*5-100/2+2.5-2**3,`<br>`);
+
+
+    let a=25, b=9;
+    document.write(`Sum is`+a+b+`<br>`);//259
+    document.write(`Sum is`+(a+b)+`<br>`);//34
+    document.write(`Sum is`,a+b,`<br>`);//34
+
+    
+    document.write(`Sub is`+a-b+`<br>`);//NAN
+    document.write(`Sub is`+(a-b)+`<br>`);//16
+    document.write(`Sub is`,a-b,`<br>`);//16
+    document.write(a-b+`is Sub <br>`);//16
+    document.write(`Product is`+a*b+`<br>`);//225
+    document.write(`result is `+a>b+`<br>`);//true
+    document.write(`<br> result is `+(a<b)+`<br>`);//true
+
+
+</script>

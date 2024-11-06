@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main {
+            width: 240px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0 0 10px red;
+            background-color: black;
+            color: aliceblue;
+            padding: 25px;
+        }
+
+        h3 {
+            text-decoration: underline;
+            text-align: center;
+            color: yellow;
+        }
+
+        .main div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        input {
+            font-size: 18px;
+            outline: none;
+            border: none;
+            background-color: black;
+            color: blue;
+            border-bottom: 2px solid white;
+        }
+
+        button {
+            width: 200px;
+            height: 36px;
+            font-size: 20px;
+            border: 0;
+            outline: 0;
+            background: linear-gradient(to right, green, yellow);
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: 600ms;
+        }
+
+        button:hover {
+            background: linear-gradient(to left, green, yellow);
+            border-radius: 13px;
+        }
+
+        span {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>Welcome to my Simple Interest calculator!</h3>
+        <div class="main">
+            <div>
+                <label for="pamt">Principle Amount</label>
+                <input type="text" id="pamt">
+                <span>&#8377;</span>
+            </div>
+            <div>
+                <label for="tm">Time</label>
+                <input type="text" id="tm">
+                <span>years</span>
+            </div>
+            <div>
+                <label for="rate">Rate of Interest</label>
+                <input type="text" id="rate">
+                <span>%</span>
+            </div>
+            <div style="text-align: center;">
+                <button onclick="calcAmount()">Total Amount</button>
+            </div>
+            <div style="text-align: right;">
+                <output id="intAmt"></output><br>
+                <output id="totAmt"></output><br>
+            </div>
+        </div>
+    </div>
+    <script>
+        function calcAmount() {
+            let p = document.getElementById('pamt').value;
+            let t = document.getElementById('tm').value;
+            let r = document.getElementById('rate').value;
+            let si = p * t * r / 100;
+            let tamt = +p + +si;
+
+            document.getElementById('intAmt').textContent = "Simple Interest: " + si.toFixed(2);
+            document.getElementById('totAmt').textContent = "Total Amount: " + tamt.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>

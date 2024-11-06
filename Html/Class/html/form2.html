@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-1">
+        <h3> Demo on reset button</h3>
+        <form>
+            <input type="reset" value="reset"><br>
+            <input type="text"><br>
+            <input type="password"><br>
+            <input type="number"><br>
+            <input type="reset" value="clear All"><br>
+            <button type="button">Submit</button>
+        </form>
+    </div>
+    <div class="form-2">
+        <h3> Demo on email,URL,date , time,color elements</h3>
+        <form action="test.aspx">
+            <label for="em">Enter email id:</label>
+            <input type="email" id="em" name="em" value="reset"><br>
+            <label for="url">Enter URL:</label>
+            <input type="url" id="url" name="url"><br>
+            <label for="dt">Enter email id:</label>
+            <input type="date" id="date" name="date"><br>
+            <label for="tm">Select time</label>
+            <input type="time" id="tm" name="tm"><br>
+            <label for="col">Select color</label>
+            <input type="color" id="col" name="col"><br>
+            <label for="col">Gender</label>
+            <input type="radio" id="g1" name="gen" checked><label>Male</label>&nbsp;
+            <input type="radio" id="g2" name="gen" checked><label>Female</label>&nbsp;
+            <input type="radio" id="g3" name="gen" checked><label>Other</label><br>
+
+            <input type="file">
+            <input type="file" multiple>
+            <input type="file" accept=".pdf,.docx">
+
+            <h4>Multiline text input</h4>
+            <label for="cm">Message</label>
+            <textarea id="cm" name="cm"></textarea>
+            <label for="add">Address</label>
+            <textarea id="add" name="add" rows="6" cols="24"></textarea>
+
+            <h4>Select options</h4>
+
+            <label>College</label>
+            <select id="college" name="college">
+                <option value="abc">NRI Institute</option>
+                <option value="bcd">LNCT Institute</option>
+                <option value="cde">TIT</option>
+                <option value="efg">SAM</option>
+            </select>
+
+            <!-- <input type="reset" value="clear All"><br> -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

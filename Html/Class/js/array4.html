@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Demo on Array literals</h3>
+    <script>
+        let a = []; // array declaration
+        document.write(`size ${a.length}<br>`); // printing size of array
+        document.write(`array ${a}<br>`); // printing whole data of array
+        a[0] = 10;
+        a[1] = 20;
+        a[2] = 30;
+        document.write(`size ${a.length}<br>`); // printing size of array
+        document.write(`array ${a}<br>`); // printing whole data of array
+
+        let b=[5,10,20,60];
+        document.write(`size ${b.length}<br>`);
+        document.write(`b : ${b}<br>`); // printing
+
+        document.write(`demo on array with new keyword<br>`); 
+
+        let c = new Array();
+        document.write(`size ${c.length}<br>`); 
+        c[0] = 12;
+        c[1] = 22;
+        c[2] = 32;
+        c[3] = 42;
+        c[4] = 52;
+        document.write(`c: ${c.length}<br>`);
+        document.write(`c : ${b}<br>`); 
+        let names = new Array('red','green','yellow','black');
+        document.write(`size ${names.length}<br>`); 
+        document.write(`names : ${names}<br>`);
+    </script>
+</body>
+</html>

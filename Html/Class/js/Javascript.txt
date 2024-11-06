@@ -1,0 +1,55 @@
+
+JavaScript IT is scripiting language.
+
+variable declaration in js--
+1.Let   -- ex--> let name; //decalare the var
+               let character="Hello";  //Initialise the variable
+               if we reinitialise the var using let then value can be change.
+2.var
+3.const
+
+JavaScript has seven primitive data types, with String being one of them. In JavaScript, a string represents a sequence of characters and can be enclosed in either single (') or double (") quotes.
+
+Note that strings are immutable, which means once they are created, they cannot be changed. The variable can still be reassigned another value.
+
+Camel case means that the first word in the name is entirely lowercase, but the following words are all title-cased. 
+                                  
+                                  ----------- Array--------------
+An array is a non-primitive data type that can hold a series of values. Non-primitive data types differ from primitive data types in that they can hold more complex data. Primitive data types like strings and numbers can only hold one value at a time.
+
+Arrays are denoted using square brackets ([]). Here is an example of a variable with the value of an empty array:
+                         
+                          let array = [];
+
+
+let character = 'Hello';
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+console.log(rows[0]);
+
+Arrays are special in that they are considered mutable. This means you can change the value at an index directly.
+
+For example, this code would assign the number 25 to the second element in the array:
+ 
+                                let array = [1, 2, 3];
+                                array[1] = 25;
+                                console.log(array); // prints [1, 25, 3]
+
+
+Notice how the value inside your rows array has been changed directly? This is called mutation.
+
+
+A method in JavaScript is a function that's associated with certain values or objects. An example you've already encountered is the .log() method, which is part of the console object.
+
+Arrays have their own methods, and the first you will explore is the .push() method. This allows you to "push" a value to the end of an array. Here is an example to add the number 12 to the end of an array:
+
+Example Code
+array.push(12);
+Use .push() to add the string "freeCodeCamp" to the end of your rows array. 
+                  a.push("Deep);
+Another method essential for this project is the .pop() method. It removes the last element from an array and returns that element.
+
+Wh
+
+
+

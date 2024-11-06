@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #markdemo {
+            margin: 20px;
+        }
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="markdemo">
+        <div>
+            <h1 class="center-text">Skills Marks</h1>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" required><br>
+
+            <label for="rollno">Roll No</label><br>
+            <input type="text" id="rollno" required><br>
+            <h3 class="center-text">Marks</h3>
+            <label for="html">Html</label><br>
+            <input type="number" id="html" required><br>
+
+            <label for="css">CSS</label><br>
+            <input type="number" id="css" required><br>
+
+            <label for="javasm">JavaScript</label><br>
+            <input type="number" id="javasm" required><br>
+
+            <label for="boot">Bootstrap</label><br>
+            <input type="number" id="boot" required><br>
+          
+            <button onclick="getResult()">Get Result</button> 
+
+            <div>
+                <p id="total"></p>
+                <p id="average"></p>
+                <p id="grade"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function getResult() {
+            let htm, cssm, bootm, jsm, total, avg, grade;
+
+            // Data collection
+            htm = +document.getElementById('html').value;
+            cssm = +document.getElementById('css').value;
+            bootm = +document.getElementById('boot').value;
+            jsm = +document.getElementById('javasm').value;
+
+            total = htm + cssm + bootm + jsm;
+            avg = total / 4;
+
+            // Checking grade
+            if (htm > 39 && cssm > 39 && jsm > 39 && bootm > 39) {
+                grade = avg > 90 ? "A+" :
+                        avg >= 80 ? "A" :
+                        avg >= 70 ? "B+" :
+                        avg >= 60 ? "B" :
+                        avg >= 50 ? "C" : "D";
+            } else {
+                grade = "Fail";
+            }
+
+            document.getElementById('total').textContent = "Total Marks: " + total;
+            document.getElementById('average').textContent = "Average: " + avg.toFixed(2);
+            document.getElementById('grade').textContent = "Grade: " + grade;
+        }
+    </script>
+</body>
+</html>

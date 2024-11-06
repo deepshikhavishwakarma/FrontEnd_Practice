@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Demo on parsing</h3>
+    <p><strong>Parsing: </strong> changing data from string format to number format.
+    input/runtime/dynamic=>String format</p>
+
+    <script>
+        let x="25",y="9";
+        //implicit parsing
+    document.write('procduct is '+x*y +'<br>');
+    document.write('Division is '+(x/y) +'<br>');
+    document.write('Pre Incre is ', ++y ,'<br>');
+    document.write('Sub is '+(x-y) +'<br>');
+    document.write('pre decrement is '+ --x +'<br>');
+
+    //explicit parse
+
+    let i="10",j="8",res;
+    res =i+j;
+    window.parseInt(i)+window.parseInt(j);
+    document.write(res,`<br>`);//108
+    res =+i+ +j;//parsing
+    document.write(res,`<br>`);//18
+    document.write(+i<+j,`<br>`);//false
+    
+    </script>
+</body>
+</html>

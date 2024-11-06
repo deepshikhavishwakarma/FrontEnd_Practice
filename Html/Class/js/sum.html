@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Finding sum of two numbers</h3>
+    <script>
+        let x,y,res;
+        x=prompt("Enter value of x: ");
+        y=prompt("Enter value of y: ");
+        res=+x + +y;
+        document.write("Sum is " + res);
+    </script>
+
+    <h2>Second method</h2>
+    <label for="f1num">First Number</label><br>
+    <input type="number" name="f1num" id="f1num"><br>
+    <label for="f2num">Second Number</label><br>
+    <input type="number" name="f2num" id="f2num"><br>
+    <button onclick="addition()">Addition</button>
+    <script>
+        function addition(){
+        let a,b,res1;//local variable
+        a= +f1num.value;
+        b= +f2num.value;
+        res=a+b;
+        document.write("Sum is " + res);
+        }
+
+    </script>
+</body>
+</html>

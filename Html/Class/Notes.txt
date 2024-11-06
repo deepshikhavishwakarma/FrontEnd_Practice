@@ -1,0 +1,716 @@
+HTML : Hyper text markup language
+table-> used to draw a table,means it grouping no. of rows
+caption-> to set main heading of table
+tr-> Table row, used to draw a row,means it grouping no. of colums
+th-> table heading, used to set column headings
+td-> table data, used to print the data in column
+since html4 
+thead-> table head section
+tbody-> table body section
+tfoot->table footer section
+> All these 8 tags are paired tags
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+10/06/2024
+Form tag--------------
+=>Html forms application
+=>group of input elements
+
+=> https: Hyper text Transfer protocol security
+
+6 types of methodology are available for sending data
+1. get
+ => It show the data in search bar.
+ =>Tranfer speed is fast.(works faster than post)
+ =>not secure
+ => Max size 5.7 KB
+
+2. post
+=>It's not showing data in search bar.
+=>Transfer speed is slow.
+=>secure
+=>No limit
+11/06/2024-------------------------------------------------------------
+email,url,date , time,color elements(html 5 elements)
+for tag used by html 5  design for(email) email id
+        <label for="em"> Enter Email Id</label><br>
+        <input type="email" id="em" name="em"><br>
+
+
+27/06/2024
+
+defining flex styles
+
+#main{
+        display: flex;
+        flex-direction: row;
+        gap:50;
+}
+#main div{
+        background-color:cyan;
+}
+
+
+
+28/06.2024
+
+what is the final width of tag and what is the final height of tag? 
+Margin we not add so border to border we calculate the width and height of tag. 
+    
+
+JAVASCRIPT start---------------------------------------------------------------------- 
+
+
+Difference between scripting language and markup language
+
+
+What is scripting?
+
+A scripting is program code that doesn't need preprocessing (e.g. compiling) before being run. In the context of a web browser,scripting usually refers to program code written in Javascript that is executed by the browser when a page is loaded, or in response to an event triggered by the user.
+
+
+Types of script: Scripts are classified into the following two types.
+
+* Client-side script
+* Server-side script
+
+Client-side script
+
+These scripts are getting executed within the web browser (client)
+Here we don't need any software.
+These scripts are used for client-side validations(data verification & data validations)
+
+Server-side script
+
+A script which executes in server machine with support of the web server/app-server software's like IIS(Internet information services),Tomcat,JBOSS etc.
+
+These scripts are used for server-side validations(authentication & authorization)
+  ex. php,jsp,asp.net,VueScript,Express Script,nodeJs,cgi,perl etc.
+
+
+
+  what are the differences between script and language?
+
+
+  JavaScript  Introduction------------------------------------------------------------------------------------
+
+                   //Java->23-jan-1996 jdk 1.0//   1993-html // css-1996 //  js-1995 //  1st browser->Mozilla
+  
+  //Mozik is the 1st browser used by public and www is used by developer
+  
+  In 1995, Js was created by a Netscape developer named "Brendan Eich"
+  Mocha(1995) -> LiveScript  -> JavaScript(1997)
+
+   NetScape  first introduced a js interpreter inNavigator2
+
+   Why is it called JavaScript?
+
+   When js was created , it initially had another name : "LiveScript". But java was very popular at the time , so it was decided that positioning a new language as a "younger brother" of java would help.
+   But as it evolved , Java script became a fully independent language with it's own  specification called ECMASCript and not it has no relation with java.
+
+  Later Js became an ECMA(European Computer Manufacturers Association Script) standard in 1997, ECMAScript is the offficial name of the language.
+
+  JavaScript is implementation of ES; ES is the specification of Js
+  RBI -> SBI,HDFC,ICICI->Customer
+  ES->JS->Progremmer
+
+  js=> topics ->ES
+
+  JS is a speed, light weight ,interoperability, Extended Functionality,dynamic,loosely typed,cross platform, free ware and open source language.
+  
+  * Speed-> Js application runs more faster than.
+  Light weight-> Less code more operations.
+  
+  * Interoperability-> Js they have the capibility to work within other web technologies.
+  Ext Fun-> lib=>Live
+  
+  * Dynamic typed-> w/o declaring was we can directly.
+  
+  * Loosely typed-> defined any var in js that allows to store any type value
+  
+  * cross platform-> cross platform compatible.
+
+
+  * It's single threaded programme
+  
+  * Javascript is an object based or prototype based programming language
+     
+
+ -> Js is client side(browser side) programming language. That means it executes on the browser.
+ 
+ -> It can also be used in server side by using Node,ASP,PHP.
+ 
+ -> JavaScript is a case sensitive programme(mixed case)
+ 
+ -> To work with js , we don't need to install any software.
+
+ -> Javascript is "interpreter-based" programming, means the code will be converted into machine language line by line. Js interpreter is already embeded in Browsers.
+ 
+ =>Parser:
+                Js code (high) <--> JS parser <-->machine code
+
+ =>Js Engine:
+
+                V8->Chrome,Edge and operations
+                SpiderMonkey-> Firefox
+                Chakra -> IE
+                SqurrelFish->Safari
+               
+ Js used for -> Web dev, mobile app, gamming app, animation,AI, Networking apps.
+
+ * no html tags no css no script programme
+* without event attribute Inline tag not possible.
+
+ can should be typed in the form of function/block/constructor
+
+syntax->  
+                                  <script src="filename.js"></script>
+
+
+
+ Function definition syntax:
+
+ function fun-name(){
+        statement
+ }
+
+ calling syntax:
+
+ fun-name(); <- html inline or internal
+
+ * Every header file is a group of function.
+
+
+
+ Literals=>
+
+ -----------------------------------------------------------------------------------------------------------1/07/2024
+
+ Comment -->  // single line comment
+              /*hbhd*/ Multi line comment
+
+JS->Lib->collection of reserved words,operators,functions,methods,classes and objects(implicit).
+
+Object is an instance of class(copy of class)
+Object is a collection of properties & methods
+        "Window"  is the base object for all JS objects.
+        "Window" object used for interacting with browser window to perform some operations.
+
+        "document" is the sub object of the window.
+        "document" object used for interecting with web page /web documnet to perform some operations.
+                  Syntax:  window.documnet    or document
+
+        "console" is the sub object of the window.
+        "console" object used for interecting with browser console to perform some operations
+                  Syntax:  window.console    or console
+
+Window specifying is optional
+NOTE:  window,document,console history etc.. are predefined/implicit objects.
+
+Javascript printing methods:
+
+write() method: The write() method writes html expressions or javascript code to a documnet without line breaking.
+              Syntax  window.documnet.write(val1 + val2,val3...); //in js comma and + both we can use for seperation
+
+
+writeln() method: The writeln() method writes html expressions or javascript code to a documnet with line breaking.
+              Syntax  window.documnet.writeln(val1,val2,val3...);
+
+log() method: The log() method writes html expressions or javascript code on browser's console.
+              Syntax  window.console.log(val1,val2,val3...);
+
+Notes Points:--->
+
+1. semicolon(;) is optional
+2. case restriction
+3. errors in console
+
+Literals--------------------->                                                                         2/07/2024
+
+String literals      " "  and  ' '  are called string literals(SL) 
+                                   Syntax : "Hi Deep"      and        'Deep'  
+                     ` ` is called tamplate literal (TL)
+
+                                   Syntax :  `Hello Deep`
+ used to represent the string datatype but SL used since JS1 and TL is new feature of JS6(ES6)
+ 1 line of text is allowed(in any language like java , c, c++) in SL but we can write n number of Lines in TL
+SL doesn't support string interpolation but TL supports String interpolation.
+
+
+ javascript new features are nothing but ecmascript features.
+ 
+
+ DQ=>DQ.SQ.BT(back tick)
+ SQ=>DQ.SQ.BT(back tick)
+ BT=>DQ.SQ.BT(back tick)
+ 
+
+ <script>
+   document.write("HI");
+   document.write("<img src="bkdfjf.png" width="100" height="32" ");  // it will give error because there are so many double quatations.
+      document.write('<img src="bkdfjf.png" width="100" height="32">' );
+   document.write("HI");
+ </script>
+
+
+ Working with Variabkes------------------------------------------------>
+   
+  
+
+                                        RAM
+_________________________________________________________________________________________
+|                                                                                        |
+|                                                                                        |
+|                                                               JS Runtime Area          |
+|                                           _____________________________________________|                                            
+|                                           |    Stack Area            Heap Area         |
+|                                           | (local var,params,       (arr,obj)         |
+|                                           |   current exe code)                        |
+|                                           |                                            |
+|                                           |                                            |
+|                                           | Class/Method Area         Register Area    |
+|                                           | (class,constructor,                        |
+|                                           |    static items)                           |  
+|___________________________________________|____________________________________________|
+
+
+ variable is a reference name of a memory block.
+   Variables are created or stored in RAM(area stack)
+   Varianke are used store/to hold a value for reuse pupose and automatically subsites value in steps.
+
+
+   How to declare a variable>
+
+   We can define var in JS three ways,  Those ways,those are:
+   > by using "var"
+      Syntax: var varname;
+                 or
+               var varname = value;  
+   > by using "let"
+               let varname;
+                 or
+               let varname = value;
+   > by using "const"
+                const varname;
+                 or
+               const varname = value;
+
+
+
+    Rules for variable meaning
+
+          => Name should sort with an alphabet(a to z) underscore( _ ) ,or dollor($) sign.
+          => After the first character we can digits (0 -9)
+          => Variable are case sensitive for example a and A are different variable=> space is not allowed means name should be a single word.
+          => special character(symbols) are not allowed in name, except _ and $.
+
+
+<script>
+    var a;//var declaration
+    document.writeln(a);
+    a=100; //assigning
+    document.writeln(a);
+    let x;//var declaration
+    document.writeln(x);
+    x=111;//assigning
+    document.writeln(x);
+    let y=222;//var initialization
+    document.writeln(y);
+    b=2000;//modified
+    x=1111;
+    document.writeln(b);
+    document.writeln(x);
+    const PI = 3.14;// var initialization
+    document.writeln(PI);
+    //PI=342; we can't change constant variables 
+    document.writeln(PI);
+    //const A;//const' declarations must be initialized
+</script>
+
+
+
+
+dynamic -->  without declaration
+
+                                     var                      let                   const
+              
+              declaration              Y                       Y                      n
+              assign/method            Y                       Y                      n
+              initialization           Y                       Y                      Y
+               Version                 JS1                  Js6(E5)                  JS6(E5)
+
+
+JavaScript data type:
+In js dt are classified into the following two categpories
+
+       Primitive datatype                                                  Non primitive datatype
+
+=>  PDT types allow strong data directly                                      reference / address
+=>  PDT allow us to store only 1 value @time                                      N values
+=>  Stack Area                                                                   Heap Area
+=>  Not sharable                                                                 sharable
+=>  These are popularly known as non reference                                reference data type
+=>  Predefined data types                                                      used defined dt
+
+
+Parsing -> changing data from string format to number format.
+
+---------------------------------------------------------------------------------------------------------------
+
+* Primitive datatypes:
+                    String,number,boolean,undefined,null(Object)
+
+* Non primitive datatype:
+                    Array,class& object, functions
+
+* typrof: 
+                    typeof is one of reserved word , it's used to identify datatype of a variable or value.
+
+
+-----------------------------Operator--------------------------------------------------------------------------
+
+
+operator Precedence
+
+( )
+[ ]
+++ --(same priority)(L to R)(Pre incre/decrement)
+**
+/ % *
++-
+> < >= <=
+== != !== ===
+=
+++ -- (Post)
+
+
+----------------------------------------------------------------------------------------15/7/2024
+Parsing :changing data from string format to number format.
+    input/runtime/dynamic=>String format
+
+    1.Implicit: 
+          auto Parsing
+          while working *,/,%,-,++,--,**
+
+    2.Explicit:
+          Manual parsing 
+               1. using function parseInt()=> data string format to integer format
+
+               syntax: window.parseInt(data);
+
+    (before applying fn)"10" =>10 (After applying fn)
+
+    "20.55"=>20;
+    "ram"=>nan
+
+
+    Parse operator=>   + is parse operator
+                  =>   unary operator ,moreover it's prefix operator 
+
+                  syntax:  +var or +value
+
+
+ ----------------------------------------------------------------------------------------------------------------------
+
+ Switch Statement:
+
+ switch  is a selection statement, but it's not decision making
+ it's is use for better performance
+ syntax: 
+        switch(var/expressions){
+          case value:statements
+          break;
+          case value: statements
+          break;
+          case value: statements
+          break;
+          default: statements
+        }      
+
+
+
+
+Looping statements
+
+    Set of instruction given to interpreter to execute until the condition becomes false is called loops. The basic purpose of the loops is min code repetation.
+    The way or the repetation will be forming a circle that's why repetation statements are called loops.
+    Some loop in javaScript are:-
+         
+         *while loop(top testing/entry level)
+         *for loop
+         *do while loop(bottom testing/exit level)
+
+initialize variable <-- where the loop starts/begins
+condition <--where the loop ends
+stepping <--loop updater
+
+
+  do while loop
+                        do{
+                          statement;
+                          stepping;
+                        }while(condition)  //condition checking at the bottom of top
+                        
+                                      ----------- Array--------------
+
+Array is the collection of element(values)
+storing group of values with same reference is called array
+array allows similar types of values(homogenous) as well as different types of values(homogenous) means one array can store group numbers,strings ,boolean etc.
+
+we can create array in local scope or outer scope.
+arrays are belongs to reference/non primitive datatype.
+arrays are created dynamically and arrays are created in heap memory.
+Arrays maintains the data in sequence order.
+
+Advantages:  
+
+          Arrays are simplifying coding when work with group of values.
+          Easy transporting data.
+          Also used for data maintanance in application.
+
+          syntax:  array creation
+
+          Approch using literals
+            
+            let/var/const array=[];
+            let/var/const array =[val1,val2,val3,val4];
+
+          Approch 2 using new keyword
+
+            let/var/const array = new array();  
+            let/var/const array = new array(val1,val2,val3,val4...);  
+
+            datatype array[size].new datatype[size];  <==java
+  
+Accessing Array
+ 
+ array[index]
+ index is a slno of memory block , it starts with 0.
+
+ Set value: 
+ array[index]=value;
+ 
+ 
+ Size of array;
+ array.length==>predefine property,it returns size of array
+ array.length=N; =>it reset size of array
+
+ interpolation
+
+ dynamically subt values between string
+ since JS6(E5)
+ Template literals req
+
+ Syntax:
+
+    `${var/exp/callfunction}`
+    `text ${var}text${exp}text${fun-call}`
+
+    
+
+
+An array is a non-primitive data type that can hold a series of values. Non-primitive data types differ from primitive data types in that they can hold more complex data. Primitive data types like strings and numbers can only hold one value at a time.
+
+Arrays are denoted using square brackets ([]). Here is an example of a variable with the value of an empty array:
+                         
+                          let array = [];
+
+
+let character = 'Hello';
+let count = 8;
+let rows = ["Naomi", "Quincy", "CamperChan"];
+console.log(rows[0]);
+
+Arrays are special in that they are considered mutable. This means you can change the value at an index directly.
+
+For example, this code would assign the number 25 to the second element in the array:
+ 
+                                let array = [1, 2, 3];
+                                array[1] = 25;
+                                console.log(array); // prints [1, 25, 3]
+
+
+Notice how the value inside your rows array has been changed directly? This is called mutation.
+
+
+A method in JavaScript is a function that's associated with certain values or objects. An example you've already encountered is the .log() method, which is part of the console object.
+
+Arrays have their own methods, and the first you will explore is the .push() method. This allows you to "push" a value to the end of an array. Here is an example to add the number 12 to the end of an array:
+
+Example Code
+array.push(12);
+Use .push() to add the string "freeCodeCamp" to the end of your rows array. 
+                  a.push("Deep);
+Another method essential for this project is the .pop() method. It removes the last element from an array and returns that element.
+
+
+====================================================================================================================
+4 Nov 2024------------------------------------------By Prasad Sir---------------------------------------------------
+====================================================================================================================
+
+Bootstrap is a component library used for UI purpose.
+
+Library : It is a pre written code used for specific purpose.
+
+Bootstrap uses 8 color which are primary,secondary,danger,info,dark,warning,success,light
+
+It also provide layout. The whole row can be divided as 12 columns of grid.
+Using media query we can make ui responsive but bootstrap provides responnsive code with breakpoints. 
+mobile - 1
+medium - 2
+lg -3
+xl - 4
+ 1 card       (6*2 - 2 card)      (4*3 - 3 card)  (3*4 - 4 card)
+col-12        col-md-6            col-lg-4           col-xl-3
+for mobile    medium               large           extra - large
+
+
+ps-5(left padding)  start
+pe-5(right padding)  end
+d-flex - display flex
+
+we can't use animation,hover,transition effect in bootstrap
+
+netlify
+
+
+
+5 Nov 2024---------------------------------------------------------------------------------------------------------
+
+Javascript is used for functionality of website . it started by brendan eich and realeased in 1995.Initially it is named as livescript.Due to the popularity of java, it is renamed as "JavaScript" .
+
+It runs on browser because Browsers have JS Engine. For google chrome , it is v8 that runs our js.
+
+To understand Js ,let's understand web and development Tools once again.
+
+Client-Server Model:
+Client requests the server
+Server responds to the client
+
+
+Developer Tools : we have developer tools in browser which make our programming better . we have tools like Element,console,sources,network,performance,memory,application,lighthouse.
+
+Ques 1 : How to attach JS fike to html?
+=======
+
+There are two ways to connect Js file 
+i. Internal Js : we can use script element to apply the JS.
+   example: 
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+         <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+          </head>
+          <body>
+    
+           <script>
+
+           /*  Add script at the end because if we add JS in strat and if it occurs error then other code will not work too .  */
+
+
+           
+           </script>
+          </body>
+        </html>
+
+ii. External Js : we can alse use External Js with .js extension and connect to html using script attribute.
+
+  example: 
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+         <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+          </head>
+          <body>
+     
+          //Internal JS
+           <script>
+
+           /*  Add script at the end because if we add JS in strat and if it occurs error then other code will not work too .  */
+           </script>
+
+
+           //External JS
+           <script src="path"></script>
+          </body>
+        </html>
+
+
+Note: we can't applied Inline JS to html like css.
+
+===============================================================
+Task1: USe internal JS and print welcome to js in console.===============================================================
+
+Ques 2: How to comment in Js?
+=======
+
+Comment -->  // single line comment
+              /*
+              hbhd
+              hjds
+              dsjhd 
+               
+              */ Multi line comment
+
+comments are not readable by JS Engine.
+
+Js is case sensitive. semicolon not mandatory in Js
+
+Ques 3: How to declare a variable in JS?
+=======
+
+var a = 20;
+colsole.log(a);
+
+var a = 10;
+colsole.log(a);   //Redeclaration is Possible in Js using var
+
+a = 45;
+console.log(a);  // reassignment is also possible in js using var
+
+
+
+let a = 20;
+colsole.log(a);
+
+let a = 10;
+colsole.log(a);   //Redeclaration is not Possible in Js using let
+
+a = 45;
+console.log(a);  // reassignment is possible in js using let
+
+
+const c = 67;
+console.log(c);
+
+const c = 67;   //Redeclaration is not Possible in Js using var
+console.log(c);
+
+c = 67;     // reassignment is not possible in js using let
+console.log(c);
+
+
+If we not write any keyword before creating variable like var,let and const then bydefault it takes var .
+var is a function scoped variable while let and const are blocked skoped variables
+
+https://github.com/prasad-bigdp/11am-new
+
+https://t.me/+17G8tUZ_b85jNDQ1
+
+
+6 Nov 2024----------------------------------------------------------------------------------------------------------
+
+
+
+
+

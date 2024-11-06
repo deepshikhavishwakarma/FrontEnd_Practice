@@ -1,0 +1,53 @@
+<h3>Demo on push & pop methods</h3>
+<script>
+    const eles = [];
+    eles.push(10);
+    eles.push(20);
+    eles.push(30);
+    eles.push(40);
+    eles.push(50);
+    eles.push(60);
+    document.write(`eles   :${eles}<br>`);//10,20,30,40,50,60 
+    eles.pop();
+    document.write(`1 pop in eles   :${eles}<br>`);//10,20,30,40,50
+
+    let x = eles.pop();
+    document.write(`2nd pop in eles   :${eles}<br>`);//10,20,30,40
+
+    let c = eles.push(70);
+    document.write(`C   :${c}<br>`); // 5
+
+</script>
+
+<!-- 
+     10,20,30,40,50,60  push methods
+     10,20,30,40,50      pop (stack->Last in first out)     
+     10,20,30,40
+     5
+
+
+     -->
+<!-- both methods are working in reverse direction 
+      
+     push() & pop() works r to l and
+     shift() & unshift() method works l to r-->
+
+<h3>Demo on Shift & Unshift methods</h3>
+<script>
+    const eles2 = [];
+    eles2.unshift(70);
+    eles2.unshift(80);
+    eles2.unshift(90);
+    document.write(`eles2   :${eles2}<br>`);//170,90,80,70
+    let d = eles2.unshift(170);
+    document.write(`D   :${d}<br>`);//170,90,80,70
+    document.write(`eles2   :${eles2}<br>`);//170,90,80,70
+
+    let m = eles2.shift();
+    eles2.shift();
+    eles2.shift();
+    document.write(`eles2   :${eles2}<br>`);//70
+    eles2.unshift(50);
+    document.write(`eles2   :${eles2}<br>`);//50,70
+
+</script>

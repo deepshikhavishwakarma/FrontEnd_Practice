@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>demo on email,url,date , time,color elements(html 5 elements)</title>
+  <style>
+    form {
+      background-color: rgb(199, 192, 241);
+      align-items: center;
+      /* margin: 12px 5rem 0px 5rem; */
+      text-align: center;
+      width: 60%;
+    }
+
+    form,
+    label {
+      font-size: 18px;
+      color: darkslategrey;
+      padding: 2px;
+      margin: 1px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    form,
+    input {
+      border: 1px solid black;
+      border-radius: 8px;
+      margin: 3px;
+      font-size: 20px;
+
+    }
+
+    /* defining flex styles */
+
+    #main {
+      display: flex;
+      /* width:800px; */
+      border: 1px solid grey;
+      justify-content: space-between;
+      flex-direction: row;
+      /* gap: 50; */
+      flex-wrap: wrap;
+    }
+
+    #main div {
+      background-color: cyan;
+      /* gap: 50; */
+      justify-content: space-between;
+    }
+
+
+
+    /* Main 2 */
+
+    /* defining grid styles */
+    #main2{
+       display: grid; /*default size of array is n*1 */
+       grid-template-columns:auto auto auto;
+       grid-template-rows: 90px 90px 90px 90px;
+       /* column-gap: 20px;
+       row-gap: 20px;        shortcut below*/
+       font-size: 24px;
+       grid-gap: 20px;
+       /* background-color: radial-gradient(circle,red,blue,green,yellow); */
+       background: url("https://th.bing.com/th/id/OIP.G2xp3YtC_-PdhO1pOKWjmQAAAA?w=289&h=180&c=7&r=0&o=5&pid=1.7");
+       background-repeat: no-repeat;
+       
+      padding:20px;
+      font-size: 32px;
+    }
+    #main2 div{
+      background-color: darkolivegreen;
+      align-items: center;
+      padding-top: 21px;
+      
+    }
+    #main2 div:nth-child(odd){
+      background-color: darkolivegreen;
+      text-align: center;
+    }
+    #main2 div:nth-child(even){
+      background-color: rgb(132, 111, 247);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Hi deep</h3>
+  <div id="main">
+    <div>Apple</div>
+    <div>Google</div>
+    <div>Microsoft</div>
+    <div>Micron</div>
+    <div>Infosys</div>
+    <div>TCS</div>
+    <div>facebook</div>
+    <div>Salesforces</div>
+    <div>SAP</div>
+    <div>Megnum</div>
+  </div>
+<br><hr><br>
+
+  <div id="main2">
+    <div>January</div>
+    <div>February</div>
+    <div>March</div>
+    <div>April</div>
+    <div>May</div>
+    <div>June</div>
+    <div>July</div>
+    <div>August</div>
+    <div>September</div>
+    <div>October</div>
+    <div>November</div>
+    <div>December</div>
+  </div>
+
+
+</body>
+
+</html>

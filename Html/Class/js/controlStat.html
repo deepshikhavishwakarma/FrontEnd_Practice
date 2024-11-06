@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Demo on simple if</h3>
+    <script>
+        let n = +prompt("Enter any number: ");
+        if (n > 0) {
+            n = n * -1;
+
+        }
+        document.write("n value: " + n);
+
+        let n1 = +prompt("Enter any number: <br>");
+        if (false) {
+            n1 = n1 * -1;
+
+        }
+        document.write("n1 value: " + n1);
+        let n2 = +prompt("Enter any number: <br>");
+        if (true) {
+            n2 = n2 * -1;
+
+        }
+        document.write("n2 value: " + n2);
+
+        document.write("Simple if else condition: <br>");
+
+        let a = +prompt("Enter any number for check even or odd: <br>");;
+        if (a % 2 == 0) {
+            document.write(a + "is Even number");
+        } else {
+            document.write(a + "is Odd number");
+        }
+    </script>
+    <h3>Demo on if else if</h3>
+    <script>
+        //if else if is used for checking multiple level we can check condition in multiple if but for short the code we use ladder if condition
+
+        let x = +prompt(" Enter first number: ");
+        let y = +prompt("Enter Second number: ");
+
+        if (x > y)
+            document.write(x + " is big", '<br />');
+        else if (y > x)
+            document.write(y + " is big", '<br />');
+        else
+            document.write("no one s big", '<br />');
+    </script>
+</body>
+
+</html>
